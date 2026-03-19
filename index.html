@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himanshu Saini - Portfolio</title>
+    <meta name="description" content="Himanshu Saini - Full Stack Developer, Web Developer, Software Engineer. Explore my portfolio showcasing projects, skills, and expertise in modern web technologies.">
+    <meta name="keywords" content="Himanshu Saini, Full Stack Developer, Web Developer, Software Engineer, Portfolio, React, Node.js, JavaScript, Python, MERN Stack">
+    <meta name="author" content="Himanshu Saini">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Himanshu Saini - Portfolio">
+    <meta property="og:description" content="Full Stack Developer portfolio showcasing projects and skills in modern web technologies.">
+    <meta property="og:image" content="https://himanshu925.github.io/portfolio-himanshu-saini-complete/sainihimanshu.jpg">
+    <meta property="og:url" content="https://himanshu925.github.io/portfolio-himanshu-saini-complete/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Himanshu Saini - Portfolio">
+    <meta name="twitter:description" content="Full Stack Developer portfolio showcasing projects and skills.">
+    <meta name="twitter:image" content="https://himanshu925.github.io/portfolio-himanshu-saini-complete/sainihimanshu.jpg">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@vercel/analytics@1.0.0/dist/index.min.js" defer></script>
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --dark-color: #343a40;
+            --light-color: #f8f9fa;
+            --success-color: #28a745;
+            --danger-color: #dc3545;
+            --warning-color: #ffc107;
+            --info-color: #17a2b8;
+            --text-color: #212529;
+            --bg-color: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --border-radius: 8px;
+            --transition: all 0.3s ease;
+        }
+
+        [data-theme="dark"] {
+            --primary-color: #0d6efd;
+            --secondary-color: #6c757d;
+            --dark-color: #f8f9fa;
+            --light-color: #343a40;
+            --text-color: #f8f9fa;
+            --bg-color: #212529;
+            --shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: var(--transition);
+            overflow-x: hidden;
+        }
+
+        .navbar {
+            background-color: var(--bg-color);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--primary-color) !important;
+        }
+
+        .nav-link {
+            color: var(--text-color) !important;
+            transition: var(--transition);
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color) !important;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--info-color));
+            color: white;
+            padding: 100px 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            animation: fadeInUp 1.2s ease-out;
+        }
+
+        .hero-image {
+            max-width: 300px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: var(--shadow);
+            animation: fadeInRight 1.5s ease-out;
+        }
+
+        .btn-custom {
+            background-color: white;
+            color: var(--primary-color);
+            border: none;
+            padding: 12px 30px;
+            border-radius: var(--border-radius);
+            font-weight: bold;
+            transition: var(--transition);
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+        }
+
+        .btn-custom:hover {
+            background-color: var(--light-color);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .section {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--primary-color);
+        }
+
+        .card {
+            background-color: var(--bg-color);
+            border: 1px solid var(--light-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill-bar {
+            background-color: var(--light-color);
+            border-radius: 10px;
+            height: 10px;
+            margin: 10px 0;
+            overflow: hidden;
+        }
+
+        .skill-fill {
+            background: linear-gradient(90deg, var(--primary-color), var(--success-color));
+            height: 100%;
+            border-radius: 10px;
+            transition: width 1s ease;
+        }
+
+        .certificate-card {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .certificate-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            border: 3px solid var(--primary-color);
+        }
+
+        .contact-form {
+            background-color: var(--bg-color);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+        }
+
+        .form-control {
+            border: 1px solid var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 12px;
+            margin-bottom: 15px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            border: none;
+            padding: 12px 30px;
+            border-radius: var(--border-radius);
+            font-weight: bold;
+            transition: var(--transition);
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .social-links a {
+            color: white;
+            margin: 0 15px;
+            font-size: 1.5rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1000;
+            background-color: var(--bg-color);
+            border: 1px solid var(--light-color);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .chatbot {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 350px;
+            height: 500px;
+            background-color: var(--bg-color);
+            border: 1px solid var(--light-color);
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            display: none;
+            flex-direction: column;
+            z-index: 1000;
+        }
+
+        .chatbot-header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px;
+            border-radius: var(--border-radius) var(--border-radius) 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chatbot-messages {
+            flex: 1;
+            padding: 15px;
+            overflow-y: auto;
+            background-color: var(--bg-color);
+        }
+
+        .chatbot-input {
+            padding: 15px;
+            border-top: 1px solid var(--light-color);
+            background-color: var(--bg-color);
+            display: flex;
+        }
+
+        .chatbot-input input {
+            flex: 1;
+            border: 1px solid var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 8px 12px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .chatbot-input button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius);
+            padding: 8px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+
+        .chat-toggle {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            z-index: 999;
+            transition: var(--transition);
+        }
+
+        .chat-toggle:hover {
+            transform: scale(1.1);
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 8px 12px;
+            border-radius: var(--border-radius);
+            max-width: 80%;
+        }
+
+        .message.user {
+            background-color: var(--primary-color);
+            color: white;
+            margin-left: auto;
+        }
+
+        .message.bot {
+            background-color: var(--light-color);
+            color: var(--text-color);
+        }
+
+        .admin-login-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 10000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .admin-login-content {
+            background-color: var(--bg-color);
+            padding: 40px;
+            border-radius: var(--border-radius);
+            box-shadow: var(--shadow);
+            max-width: 400px;
+            width: 90%;
+        }
+
+        .edit-mode {
+            border: 2px solid var(--warning-color);
+            background-color: rgba(255, 193, 7, 0.1);
+        }
+
+        .edit-controls {
+            display: none;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: var(--bg-color);
+            border: 1px solid var(--light-color);
+            border-radius: var(--border-radius);
+            padding: 5px;
+        }
+
+        .edit-mode .edit-controls {
+            display: block;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.2rem;
+            }
+
+            .hero-image {
+                max-width: 200px;
+                margin-top: 30px;
+            }
+
+            .chatbot {
+                width: 90%;
+                height: 400px;
+                bottom: 10px;
+                right: 10px;
+            }
+
+            .chat-toggle {
+                bottom: 10px;
+                right: 10px;
+            }
+        }
+
+        .whatsapp-float {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background-color: #25d366;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: var(--shadow);
+            z-index: 998;
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid var(--light-color);
+            border-radius: 50%;
+            border-top-color: var(--primary-color);
+            animation: spin 1s ease-in-out infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Theme Toggle -->
+    <div class="theme-toggle" onclick="toggleTheme()" title="Toggle Theme">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Himanshu Saini</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#certificates">Certificates</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="showAdminLogin()">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Hi, I'm Himanshu Saini</h1>
+                        <p class="hero-subtitle">Full Stack Developer & Software Engineer</p>
+                        <p class="mb-4">Passionate about creating innovative web solutions and bringing ideas to life through code. With expertise in modern technologies, I build scalable and user-friendly applications.</p>
+                        <a href="#contact" class="btn-custom">Get In Touch</a>
+                        <a href="#skills" class="btn-custom">View My Work</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center" data-aos="fade-left">
+                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWGRkqGx0f/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRmknyJckliyjqTzSlT54b6bk+h0R+IRjWjBqO6O2mhP//Z" alt="Himanshu Saini" class="hero-image" id="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section bg-light" data-theme-bg="dark">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h3>Who I Am</h3>
+                    <p>I'm a dedicated Full Stack Developer with a passion for creating exceptional digital experiences. My journey in software development has equipped me with a diverse skill set and a problem-solving mindset.</p>
+                    <p>With expertise in both frontend and backend technologies, I enjoy building scalable web applications that not only look great but also perform efficiently. I'm always eager to learn new technologies and tackle challenging projects.</p>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h5>Experience</h5>
+                            <p>3+ Years</p>
+                        </div>
+                        <div class="col-md-6">
+                            <h5>Projects</h5>
+                            <p>50+</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="card p-4">
+                        <h4>My Approach</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check text-success me-2"></i> User-Centric Design</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Clean & Maintainable Code</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Performance Optimization</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Continuous Learning</li>
+                            <li><i class="fas fa-check text-success me-2"></i> Agile Development</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
+            <div class="row" id="skills-container" data-aos="fade-up" data-aos-delay="200">
+                <!-- Skills will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section bg-light" data-theme-bg="dark">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Certificates</h2>
+            <div class="row" id="certificates-container" data-aos="fade-up" data-aos-delay="200">
+                <!-- Certificates will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                </div>
+                            </div>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            <button type="submit" class="btn btn-primary" id="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h4>Himanshu Saini</h4>
+                    <p>Full Stack Developer passionate about creating amazing web experiences.</p>
+                </div>
+                <div class="col-lg-6 mb-4">
+                    <h4>Connect With Me</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/Himanshu925" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                        <a href="https://linkedin.com/in/himanshu-saini-925" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://twitter.com/himanshu925" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                        <a href="mailto:himanshu.saini@example.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p>&copy; 2024 Himanshu Saini. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <button class="whatsapp-float" onclick="openWhatsApp()" title="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </button>
+
+    <!-- Chatbot -->
+    <div class="chatbot" id="chatbot">
+        <div class="chatbot-header">
+            <span><i class="fas fa-robot me-2"></i>Virtual Assistant</span>
+            <button onclick="toggleChatbot()" style="background: none; border: none; color: white; font-size: 1.2rem;">&times;</button>
+        </div>
+        <div class="chatbot-messages" id="chatbot-messages">
+            <div class="message bot">Hello! I'm Himanshu's virtual assistant. How can I help you today?</div>
+        </div>
+        <div class="chatbot-input">
+            <input type="text" id="chatbot-input" placeholder="Type your message..." onkeypress="handleChatKeyPress(event)">
+            <button onclick="sendChatMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Chat Toggle -->
+    <button class="chat-toggle" onclick="toggleChatbot()" title="Chat with Assistant">
+        <i class="fas fa-comments"></i>
+    </button>
+
+    <!-- Admin Login Modal -->
+    <div class="admin-login-modal" id="admin-login-modal">
+        <div class="admin-login-content">
+            <h3>Admin Login</h3>
+            <form id="admin-login-form">
+                <div class="mb-3">
+                    <input type="text" class="form-control" id="admin-username" name="username" placeholder="Username" required>
+                </div>
+                <div class="mb-3">
+                    <input type="password" class="form-control" id="admin-password" name="password" placeholder="Password" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <button type="button" class="btn btn-secondary ms-2" onclick="hideAdminLogin()">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Theme Management
+        let currentTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        updateThemeIcon();
+
+        function toggleTheme() {
+            currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+            document.documentElement.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('theme', currentTheme);
+            updateThemeIcon();
+        }
+
+        function updateThemeIcon() {
+            const icon = document.getElementById('theme-icon');
+            icon.className = currentTheme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+        }
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar Background Change on Scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = 'var(--bg-color)';
+                navbar.style.boxShadow = 'var(--shadow)';
+            } else {
+                navbar.style.backgroundColor = 'transparent';
+                navbar.style.boxShadow = 'none';
+            }
+        });
+
+        // Load Skills Dynamically
+        async function loadSkills() {
+            try {
+                const response = await fetch('/api/skills');
+                const skills = await response.json();
+                const container = document.getElementById('skills-container');
+
+                if (skills.length === 0) {
+                    // Default skills if no data
+                    const defaultSkills = [
+                        { name: 'JavaScript', percentage: 90 },
+                        { name: 'React', percentage: 85 },
+                        { name: 'Node.js', percentage: 80 },
+                        { name: 'Python', percentage: 75 },
+                        { name: 'HTML/CSS', percentage: 95 },
+                        { name: 'MongoDB', percentage: 70 }
+                    ];
+                    displaySkills(defaultSkills);
+                } else {
+                    displaySkills(skills);
+                }
+            } catch (error) {
+                console.error('Error loading skills:', error);
+                // Fallback to default skills
+                const defaultSkills = [
+                    { name: 'JavaScript', percentage: 90 },
+                    { name: 'React', percentage: 85 },
+                    { name: 'Node.js', percentage: 80 },
+                    { name: 'Python', percentage: 75 },
+                    { name: 'HTML/CSS', percentage: 95 },
+                    { name: 'MongoDB', percentage: 70 }
+                ];
+                displaySkills(defaultSkills);
+            }
+        }
+
+        function displaySkills(skills) {
+            const container = document.getElementById('skills-container');
+            container.innerHTML = '';
+
+            skills.forEach(skill => {
+                const skillCard = document.createElement('div');
+                skillCard.className = 'col-md-6 col-lg-4 mb-4';
+                skillCard.innerHTML = `
+                    <div class="card p-4 text-center">
+                        <h5>${skill.name}</h5>
+                        <div class="skill-bar">
+                            <div class="skill-fill" style="width: 0%" data-percentage="${skill.percentage}"></div>
+                        </div>
+                        <span>${skill.percentage}%</span>
+                    </div>
+                `;
+                container.appendChild(skillCard);
+            });
+
+            // Animate skill bars
+            setTimeout(() => {
+                document.querySelectorAll('.skill-fill').forEach(fill => {
+                    fill.style.width = fill.dataset.percentage + '%';
+                });
+            }, 500);
+        }
+
+        // Load Certificates Dynamically
+        async function loadCertificates() {
+            try {
+                const response = await fetch('/api/certificates');
+                const certificates = await response.json();
+                const container = document.getElementById('certificates-container');
+
+                if (certificates.length === 0) {
+                    // Default certificates if no data
+                    const defaultCertificates = [
+                        { title: 'Full Stack Web Development', description: 'Complete course on modern web development technologies', imageUrl: 'https://via.placeholder.com/100x100?text=Certificate' },
+                        { title: 'React Developer Certification', description: 'Advanced React development and best practices', imageUrl: 'https://via.placeholder.com/100x100?text=React' },
+                        { title: 'Node.js Backend Development', description: 'Server-side JavaScript development with Node.js', imageUrl: 'https://via.placeholder.com/100x100?text=Node.js' }
+                    ];
+                    displayCertificates(defaultCertificates);
+                } else {
+                    displayCertificates(certificates);
+                }
+            } catch (error) {
+                console.error('Error loading certificates:', error);
+                // Fallback to default certificates
+                const defaultCertificates = [
+                    { title: 'Full Stack Web Development', description: 'Complete course on modern web development technologies', imageUrl: 'https://via.placeholder.com/100x100?text=Certificate' },
+                    { title: 'React Developer Certification', description: 'Advanced React development and best practices', imageUrl: 'https://via.placeholder.com/100x100?text=React' },
+                    { title: 'Node.js Backend Development', description: 'Server-side JavaScript development with Node.js', imageUrl: 'https://via.placeholder.com/100x100?text=Node.js' }
+                ];
+                displayCertificates(defaultCertificates);
+            }
+        }
+
+        function displayCertificates(certificates) {
+            const container = document.getElementById('certificates-container');
+            container.innerHTML = '';
+
+            certificates.forEach(cert => {
+                const certCard = document.createElement('div');
+                certCard.className = 'col-md-6 col-lg-4 mb-4';
+                certCard.innerHTML = `
+                    <div class="card certificate-card">
+                        <img src="${cert.imageUrl}" alt="${cert.title}" class="certificate-image" onerror="this.src='https://via.placeholder.com/100x100?text=Certificate'">
+                        <h5>${cert.title}</h5>
+                        <p>${cert.description}</p>
+                    </div>
+                `;
+                container.appendChild(certCard);
+            });
+        }
+
+        // Contact Form Submission
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.getElementById('submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.innerHTML = '<span class="loading"></span> Sending...';
+            submitBtn.disabled = true;
+
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+
+            try {
+                const response = await fetch('/contact', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    alert('Message sent successfully!');
+                    this.reset();
+                } else {
+                    alert('Error sending message. Please try again.');
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Error sending message. Please try again.');
+            } finally {
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Chatbot Functionality
+        let isChatbotOpen = false;
+        const chatbotResponses = {
+            'hello': 'Hello! How can I help you today?',
+            'hi': 'Hi there! What can I do for you?',
+            'about': 'Himanshu is a Full Stack Developer with expertise in modern web technologies. He specializes in creating scalable web applications.',
+            'skills': 'Himanshu has strong skills in JavaScript, React, Node.js, Python, HTML/CSS, and MongoDB. Check out the Skills section for more details!',
+            'contact': 'You can contact Himanshu through the contact form on this page, or reach out via email or social media.',
+            'projects': 'Himanshu has worked on numerous projects. You can find more details in his GitHub profile or by contacting him directly.',
+            'experience': 'Himanshu has over 3 years of experience in software development, with expertise in full-stack web development.',
+            'hire': 'To discuss hiring Himanshu or collaborating on a project, please use the contact form or send an email.',
+            'default': 'I\'m sorry, I didn\'t understand that. You can ask about Himanshu\'s skills, experience, projects, or how to contact him.'
+        };
+
+        function toggleChatbot() {
+            const chatbot = document.getElementById('chatbot');
+            const chatToggle = document.querySelector('.chat-toggle');
+            
+            isChatbotOpen = !isChatbotOpen;
+            
+            if (isChatbotOpen) {
+                chatbot.style.display = 'flex';
+                chatToggle.style.display = 'none';
+            } else {
+                chatbot.style.display = 'none';
+                chatToggle.style.display = 'block';
+            }
+        }
+
+        function sendChatMessage() {
+            const input = document.getElementById('chatbot-input');
+            const message = input.value.trim();
+            
+            if (message) {
+                addMessage(message, 'user');
+                input.value = '';
+                
+                // Send to server for logging
+                fetch('/chat', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ message })
+                }).catch(error => console.error('Error logging chat:', error));
+                
+                // Get bot response
+                setTimeout(() => {
+                    const response = getBotResponse(message);
+                    addMessage(response, 'bot');
+                }, 500);
+            }
+        }
+
+        function handleChatKeyPress(event) {
+            if (event.key === 'Enter') {
+                sendChatMessage();
+            }
+        }
+
+        function addMessage(text, sender) {
+            const messages = document.getElementById('chatbot-messages');
+            const messageDiv = document.createElement('div');
+            messageDiv.className = `message ${sender}`;
+            messageDiv.textContent = text;
+            messages.appendChild(messageDiv);
+            messages.scrollTop = messages.scrollHeight;
+        }
+
+        function getBotResponse(message) {
+            const lowerMessage = message.toLowerCase();
+            
+            for (const [key, response] of Object.entries(chatbotResponses)) {
+                if (key !== 'default' && lowerMessage.includes(key)) {
+                    return response;
+                }
+            }
+            
+            return chatbotResponses.default;
+        }
+
+        // Admin Functionality
+        let isEditMode = false;
+
+        function showAdminLogin() {
+            document.getElementById('admin-login-modal').style.display = 'flex';
+        }
+
+        function hideAdminLogin() {
+            document.getElementById('admin-login-modal').style.display = 'none';
+        }
+
+        document.getElementById('admin-login-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('admin-username').value;
+            const password = document.getElementById('admin-password').value;
+            
+            try {
+                const response = await fetch('/admin/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ username, password })
+                });
+                
+                const result = await response.json();
+                
+                if (result.success) {
+                    hideAdminLogin();
+                    toggleEditMode();
+                    alert('Welcome to admin mode!');
+                } else {
+                    alert('Invalid credentials');
+                }
+            } catch (error) {
+                console.error('Login error:', error);
+                alert('Login failed. Please try again.');
+            }
+        });
+
+        function toggleEditMode() {
+            isEditMode = !isEditMode;
+            document.body.classList.toggle('edit-mode', isEditMode);
+            
+            if (isEditMode) {
+                // Add edit controls to sections
+                addEditControls();
+            } else {
+                // Remove edit controls
+                removeEditControls();
+            }
+        }
+
+        function addEditControls() {
+            // This would add edit buttons to various sections
+            // For now, just show an alert
+            alert('Edit mode activated. You can now edit content.');
+        }
+
+        function removeEditControls() {
+            // Remove edit controls
+            alert('Edit mode deactivated.');
+        }
+
+        // WhatsApp Integration
+        function openWhatsApp() {
+            const phoneNumber = '+1234567890'; // Replace with actual phone number
+            const message = 'Hello Himanshu! I visited your portfolio website.';
+            const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+
+        // Load content on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            loadSkills();
+            loadCertificates();
+        });
+
+        // Close modals when clicking outside
+        document.getElementById('admin-login-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                hideAdminLogin();
+            }
+        });
+    </script>
+</body>
+</html>
